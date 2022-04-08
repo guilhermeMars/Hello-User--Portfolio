@@ -12,6 +12,7 @@ const RelativeDiv = styled.div`
 
 const StyledDiv = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 0px 20px;
 `;
@@ -22,7 +23,7 @@ const StyledTextDiv = styled.div`
   border-radius: 15px;
   padding: 15px;
   margin: 20px 30px 0px 7vh;
-  min-width: 40vh;
+  min-width: 50vh;
   max-width: 40%;
   flex: 1;
 `;
@@ -39,6 +40,7 @@ const StyledP = styled.p`
 
 const StyledServices = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin: 0px 20px;
   flex: 1;
@@ -59,26 +61,26 @@ const ServicesDiv = () => {
     <RelativeDiv>
       <StyledDiv>
         <StyledTextDiv>
-          <StyledH3>Mega Sample Text</StyledH3>
+          <StyledH3>Entendemos Diversas Áreas</StyledH3>
           <StyledP>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt quod nobis esse quis corporis veritatis nemo
+            Entender tudo que for necessário para ajudar em qualquer área
           </StyledP>
         </StyledTextDiv>
         <StyledServices>
           <ServicesType
             image={Code}
-            title="Teeste"
-            text="Lorem ipsum dolor sit amet. Ea numquam iusto a accusantium autem et fugit maxime et error neque et dolores cupiditate sed similique enim. Eum quos quia quo laborum quidem At"
+            title="Programação"
+            text="Sabemos o básico sobre HTML, CSS, JS, Redes e Data Science. Sendo assim, caso haja algum erros inesperado, saberemos explicar o porquê de tal"
           />
           <ServicesType
             image={Settings}
-            title="Teeste"
-            text="Lorem ipsum dolor sit amet. Ea numquam iusto a accusantium autem et fugit maxime et error neque et dolores cupiditate sed similique enim. Eum quos quia quo laborum quidem At"
+            title="Configurações"
+            text="Conhecemos as configurações dos navegadores mais populares, dos sistemas operacionais e como cada uma impacta na sua navegação"
           />
           <ServicesType
             image={Work}
-            title="Teeste"
-            text="Lorem ipsum dolor sit amet. Ea numquam iusto a accusantium autem et fugit maxime et error neque et dolores cupiditate sed similique enim. Eum quos quia quo laborum quidem At"
+            title="Dispositivos"
+            text="Entendemos e sabemos as diferenças entre dispositivos na hora da navegação, auxiliando nos diferentes problemas que podem acontecer em cada um"
           />
         </StyledServices>
       </StyledDiv>

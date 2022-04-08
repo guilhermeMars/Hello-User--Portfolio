@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 
 const MainDiv = styled.div`
     display: flex;
+    flex-wrap: wrap;
     padding: 10px;
     justify-content: center;
     background-image: url("${FooterBackground}");

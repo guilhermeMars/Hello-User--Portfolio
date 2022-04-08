@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import validation from "../models/validarContato";
 import useFormik from "../hooks/useFormik";
 import { StyledDefaultLink } from "./UI";
 import BackgroundDetails from "../assets/background details.png";
@@ -80,7 +79,6 @@ const Contato = () => {
       email: "Testtest.com",
       text: "",
     },
-    validate: validation,
   });
 
   return (

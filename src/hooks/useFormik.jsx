@@ -1,11 +1,15 @@
 import { useState, useEffect } from "react";
+import validate from '../models/validarContato';
 
-function useFormik({ initialValues, validate }) {
+function useFormik({ initialValues }) {
   const [touched, setTouched] = useState({});
   const [values, setValues] = useState(initialValues);
   const [errors, setErrors] = useState({});
-
+  
   useEffect(() => {
+    function validateValues(values) {
+      setErrors(validate(values));
+    }
     validateValues(values);
   }, [values]);
 
@@ -33,9 +37,6 @@ function useFormik({ initialValues, validate }) {
     return false;
   }
 
-  function validateValues(values) {
-    setErrors(validate(values));
-  }
 
   return { values, touched, handleBlur, errors, setErrors, handleChange, canSend };
 }

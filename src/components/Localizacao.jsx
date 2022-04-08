@@ -24,7 +24,13 @@ const GoogleMaps = styled.iframe`
 const AtendimentoDiv = styled.div`
   display: flex;
   margin: 15vh auto;
-  max-width: 70%;
+  max-width: 65em;
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+    margin: 15vh auto;
+    max-width: 90%;
+    align-items: center;
+  }
 `;
 
 const TextDiv = styled.div`
@@ -43,6 +49,10 @@ const StyledP = styled.p`
 const StyledImg = styled.img`
   max-width: 70vh;
   margin-left: 20px;
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+    margin-top: 20px;
+  }
 `;
 
 const Localizacao = () => {

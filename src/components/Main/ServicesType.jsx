@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const StyledDiv = styled.div`
     box-shadow: 2px 2px 6px rgb(0 0 0 / 30%);
     padding: 10px;
+    min-width: 14em;
     max-width: 30%;
     border-radius: 10px;
     margin: 20px 10px;
@@ -13,15 +14,14 @@ const StyledDiv = styled.div`
 `
 
 const StyledImage = styled.img`
-    max-width: 27vh;
-    height: 27vh;
+    max-width: 12em;
     border-radius: 10px;
 `
 
 const StyledH3 = styled.h3`
-    font-size: 40px;
+    font-size: 30px;
     padding: 0px;
-    margin: 0px;
+    margin: 10px 0px;
 `
 
 const StyledP = styled.p`

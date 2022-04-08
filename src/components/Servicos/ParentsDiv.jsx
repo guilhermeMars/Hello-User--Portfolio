@@ -6,6 +6,10 @@ const StyledDiv = styled.div`
     display: flex;
     margin: 20vh auto;
     max-width: 80%;
+    @media only screen and (max-width: 1000px){
+        flex-direction: column;
+        margin: 20vh auto;
+    }
 `;
 
 const StyledImage = styled.img`
@@ -15,7 +19,7 @@ const StyledImage = styled.img`
 
 const TextDiv = styled.div`
     margin: auto 0px;
-    max-width: 40%;
+    max-width: 30em;
 `;
 
 const StyledH2 = styled.h2`

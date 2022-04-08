@@ -4,26 +4,31 @@ import NotebookGirl from '../../assets/Notebook Girl.png';
 
 const StyledDiv = styled.div`
     display: flex;
-    margin-top: 60px;
     margin-bottom: 15px;
+    @media only screen and (max-width: 1000px){
+        flex-direction: column;
+    }
 `;
 
 const TextDiv = styled.div`
-    height: 20vh;
     text-align: center;
-    margin-top: 7em;
+    margin: auto 0px;
 `
 
 const StyledH1 = styled.h1`
-    font-size: 5em;
+    font-size: 4em;
 `;
 
 const StyledP = styled.p`
     color: rgba(0, 0, 0, 0.8);
     font-size: 20px;
+    width: 70%;
+    margin: auto;;
 `;
 
 const NotebookImg = styled.img`
+    margin-top: 60px;
+    min-width: 22em;
     max-width: 50%;
 `
 
@@ -31,8 +36,8 @@ const MainDiv = () => {
   return (
     <StyledDiv>
       <TextDiv>
-          <StyledH1>Sample Text</StyledH1>
-          <StyledP>Lorem ipsum dolor sit amet. Ab rerum fugiat ea magnam maiores eum eaque sapiente ut earum </StyledP>
+          <StyledH1>Uma maneira fácil de mexer na web.</StyledH1>
+          <StyledP>Ajudamos pessoas de todas as idades, com dificuldade em tecnologia, à mais de 56 anos!</StyledP>
       </TextDiv>
       <NotebookImg src={NotebookGirl} alt="Garota Note" />
     </StyledDiv>

@@ -9,6 +9,10 @@ const MainDiv = styled.div`
     justify-content: center;
     margin: 15vh auto;
     text-align: center;
+    @media only screen and (max-width: 1000px){
+        flex-direction: column;
+        align-items: center;
+    }
 `;
 
 const IconDIv = styled.div`
