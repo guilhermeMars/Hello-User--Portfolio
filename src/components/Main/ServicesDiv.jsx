@@ -41,7 +41,7 @@ const StyledH3 = styled.h3`
   font-size: 60px;
   margin: 30px 0px;
   @media only screen and (max-width: 1000px) {
-    font-size: 50px;
+    font-size: 40px;
   }
 `;
 
