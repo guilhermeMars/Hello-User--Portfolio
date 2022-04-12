@@ -4,81 +4,99 @@ import VideoCall from "../assets/video call.jpg";
 import Working from "../assets/working.jpg";
 
 const StyledDiv = styled.div`
-    margin: 2em;
-    .backgroundGray{
-        background-color: rgba(21, 0, 255, 0.2);
-        border-radius: 10px;
-    }
-    .marginTop{
-        margin-top: 20px;
-    }
+  margin: 2em;
 `;
 
 const StyledFlexDiv = styled.div`
-    display: flex;
-    width: 75%;
-    margin: 10px auto;
-`
-
-const StyledBigImg = styled.img`
-    width: 23em;
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.3);
+  max-width: 65em;
+  margin: 40px auto;
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
 `;
 
-const StyledSmallImg = styled.img`
-    width: 30em;
-`
-
-const StyledText = styled.div`
-    margin: 0px 40px;
-`
-
-const StyledH1 = styled.h1`
-    font-size: 50px;
-    margin: 10px 0px;
+const TextDiv = styled.div`
+  margin: 30px 10px;
 `;
 
 const StyledH2 = styled.h2`
-    font-size: 40px;
-    margin: 10px 0px;
+  font-size: 40px;
 `;
 
 const StyledP = styled.p`
-    font-size: 17px;
-`
+  font-size: 22px;
+  margin-top: 10px;
+`;
+
+const StyledImgRight = styled.img`
+  height: 100%;
+  max-width: 20em;
+  border-radius: 0px 10px 10px 0px;
+  margin-left: 10px;
+  @media only screen and (max-width: 1000px) {
+    width: 10em;
+    margin: auto;
+  }
+`;
+
+const StyledImgLeft = styled.img`
+  height: 100%;
+  max-width: 25em;
+  border-radius: 10px 0px 0px 10px;
+  margin-right: 10px;
+  @media only screen and (max-width: 1000px) {
+    width: 15em;
+    margin: auto;
+  }
+`;
+
+const HalfBackground = styled.div`
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 100vw;
+  max-height: 150%;
+  width: 50%;
+  right: 0;
+  background-color: rgba(21, 0, 255, 0.7);
+  @media only screen and (max-width: 1000px) {
+    height: 350vw;
+    max-height: 150%;
+  }
+`;
 
 const Sobre = () => {
   return (
     <StyledDiv>
       <StyledFlexDiv>
-          <StyledBigImg src={VideoCall} alt="Helping Call" />
-          <StyledText>
-              <StyledH1>Quem somos?</StyledH1>
-              <StyledP>
-                Lorem ipsum dolor sit amet. Ipsa assumenda ad delectus ipsam sed dolores
-                nulla. Quo optio nulla qui cumque nulla quo quam accusantium eos dolore
-                nemo. Et quos soluta non ratione adipisci a perspiciatis reprehenderit
-                eum deserunt voluptatem est quibusdam ratione! Ut nostrum itaque eum
-                culpa iusto non asperiores dolores. Qui commodi architecto et aliquid
-                fugit et sequi molestiae sed expedita unde. Perferendis voluptate est
-                quasi consequatur ad cumque fugiat.
-              </StyledP>
-          </StyledText>
+        <TextDiv>
+          <StyledH2>Sample Text</StyledH2>
+          <StyledP>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore
+            deserunt expedita itaque aut, nobis pariatur distinctio tenetur
+            aliquid ullam ea provident eius nam dolor inventore illum quod et ut
+            harum.
+          </StyledP>
+        </TextDiv>
+        <StyledImgRight src={VideoCall} alt="Ligação de vídeo" />
       </StyledFlexDiv>
-      <StyledFlexDiv className="backgroundGray marginTop">
-          <StyledText>
-              <StyledH2>Qual nosso objetivo?</StyledH2>
-              <StyledP>
-                Lorem ipsum dolor sit amet. Ipsa assumenda ad delectus ipsam sed dolores
-                nulla. Quo optio nulla qui cumque nulla quo quam accusantium eos dolore
-                nemo. Et quos soluta non ratione adipisci a perspiciatis reprehenderit
-                eum deserunt voluptatem est quibusdam ratione! Ut nostrum itaque eum
-                culpa iusto non asperiores dolores. Qui commodi architecto et aliquid
-                fugit et sequi molestiae sed expedita unde. Perferendis voluptate est
-                quasi consequatur ad cumque fugiat.
-              </StyledP>
-          </StyledText>
-          <StyledSmallImg src={Working} alt="Helping Call" />
+      <StyledFlexDiv>
+        <StyledImgLeft src={Working} alt="Trabalhando" />
+        <TextDiv>
+          <StyledH2>Sample Text</StyledH2>
+          <StyledP>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore
+            deserunt expedita itaque aut, nobis pariatur distinctio tenetur
+            aliquid ullam ea provident eius nam dolor inventore illum quod et ut
+            harum.
+          </StyledP>
+        </TextDiv>
       </StyledFlexDiv>
+      <HalfBackground />
     </StyledDiv>
   );
 };

@@ -26,6 +26,11 @@ const StyledDivInput = styled.div`
 
 const StyledLabel = styled.label`
   font-size: 18px;
+  @media only screen and (max-width: 1000px) {
+    border-radius: 5px 5px 0px 0px;
+    padding: 5px;
+    background-color: white;
+  }
 `;
 
 const StyledInputDefault = styled.input`
@@ -56,7 +61,7 @@ const StyledSpanErro = styled.span`
 const StyledDefaultButton = styled(StyledDefaultLink).attrs({
   as: "button",
 })`
-  max-width: 30%;
+  max-width: 7em;
 `;
 
 const CenterDiv = styled.div`

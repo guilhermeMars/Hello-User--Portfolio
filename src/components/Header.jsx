@@ -124,6 +124,10 @@ const Header = () => {
     }
   };
 
+  const handleCloseMenu = () =>{
+    setMenu(false);
+  }
+
   return (
     <>
       <Spacing />
@@ -135,10 +139,10 @@ const Header = () => {
             onClick={handleMenu}
           />
           <StyledH1>Menu</StyledH1>
-          <StyledContentBar to="/">Home</StyledContentBar>
-          <StyledContentBar to="/sobre">Sobre nós</StyledContentBar>
-          <StyledContentBar to="/servicos">Serviços</StyledContentBar>
-          <StyledContentBar to="/localizacao">Localização</StyledContentBar>
+          <StyledContentBar to="/" onClick={handleCloseMenu}>Home</StyledContentBar>
+          <StyledContentBar to="/sobre" onClick={handleCloseMenu}>Sobre nós</StyledContentBar>
+          <StyledContentBar to="/servicos" onClick={handleCloseMenu}>Serviços</StyledContentBar>
+          <StyledContentBar to="/localizacao" onClick={handleCloseMenu}>Localização</StyledContentBar>
           <CenterDiv>
             <StyledBarLink to="/contato">Contate-nos</StyledBarLink>
           </CenterDiv>
