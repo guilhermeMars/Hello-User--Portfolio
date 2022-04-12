@@ -8,7 +8,7 @@ const StyledDiv = styled.div`
     max-width: 80%;
     @media only screen and (max-width: 1000px){
         flex-direction: column;
-        margin: 20vh auto;
+        margin: 10vh 0px 10vh 20px;
     }
 `;
 

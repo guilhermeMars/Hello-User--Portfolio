@@ -47,7 +47,9 @@ const StyledP = styled.p`
 `;
 
 const StyledImg = styled.img`
-  max-width: 70vh;
+  min-width: 22em;
+  max-width: 45%;
+  height: 100%;
   margin-left: 20px;
   @media only screen and (max-width: 1000px) {
     flex-direction: column;

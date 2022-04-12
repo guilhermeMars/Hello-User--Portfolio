@@ -64,7 +64,7 @@ const CenterDiv = styled.div`
 `;
 
 const BackgroundImg = styled.img`
-  position: absolute; 
+  position: absolute;
   z-index: -1;
   bottom: 0%;
   right: 0%;
@@ -83,7 +83,10 @@ const Contato = () => {
 
   return (
     <div>
-      <StyledTittle>Nos envie seu problema e lhe <UnderlineSpan>retornaremos em algumas horas ;)</UnderlineSpan></StyledTittle>
+      <StyledTittle>
+        Nos envie seu problema e lhe{" "}
+        <UnderlineSpan>retornaremos em algumas horas ;)</UnderlineSpan>
+      </StyledTittle>
       <StyledForm
         onSubmit={(event) => {
           event.preventDefault();

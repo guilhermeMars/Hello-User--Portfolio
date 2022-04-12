@@ -8,13 +8,19 @@ import Work from "../../assets/work.png";
 const RelativeDiv = styled.div`
   position: relative;
   z-index: -1;
-`
+  display: flex;
+  justify-content: center;
+`;
 
 const StyledDiv = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0px 20px;
+  @media only screen and (max-width: 1000px) {
+    width: 360px;
+    margin: 0px;
+  }
 `;
 
 const StyledTextDiv = styled.div`
@@ -23,15 +29,21 @@ const StyledTextDiv = styled.div`
   border-radius: 15px;
   padding: 15px;
   margin: 20px 30px 0px 7vh;
-  min-width: 50vh;
+  min-width: 40vh;
   max-width: 40%;
   flex: 1;
+  @media only screen and (max-width: 1000px) {
+    margin: 20px 0px;
+  }
 `;
 
 const StyledH3 = styled.h3`
   font-size: 60px;
   margin: 30px 0px;
-  `;
+  @media only screen and (max-width: 1000px) {
+    font-size: 50px;
+  }
+`;
 
 const StyledP = styled.p`
   font-size: 30px;
@@ -47,13 +59,14 @@ const StyledServices = styled.div`
 `;
 
 const BackgroundBlue = styled.div`
-  position: absolute; 
+  position: absolute;
   top: 0;
   z-index: -1;
   width: 100vw;
-  max-width:100%;
+  max-width: 100%;
   height: 15em;
   background-color: rgba(20, 0, 255, 0.6);
+  
 `;
 
 const ServicesDiv = () => {

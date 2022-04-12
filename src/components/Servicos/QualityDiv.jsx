@@ -12,12 +12,14 @@ const MainDiv = styled.div`
     @media only screen and (max-width: 1000px){
         flex-direction: column;
         align-items: center;
+        margin: 0vh auto;
     }
 `;
 
 const IconDIv = styled.div`
     margin: 0px 20px;
-    width: 55vh;
+    min-width: 40vh;
+    max-width: 55vh;
 `;
 
 const Icon = styled.img`
