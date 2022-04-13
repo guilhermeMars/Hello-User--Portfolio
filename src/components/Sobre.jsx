@@ -63,9 +63,9 @@ const HalfBackground = styled.div`
   width: 50%;
   right: 0;
   background-color: rgba(21, 0, 255, 0.7);
-  @media only screen and (max-width: 1000px) {
+  @media only screen and (max-width: 750px) {
     height: 350vw;
-    max-height: 150%;
+    max-height: 200%;
   }
 `;
 

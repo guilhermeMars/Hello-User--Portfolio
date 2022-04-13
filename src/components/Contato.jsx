@@ -74,6 +74,9 @@ const BackgroundImg = styled.img`
   bottom: 0%;
   right: 0%;
   max-width: 35em;
+  @media only screen and (max-width: 950px) {
+    bottom: -20%;
+  }
 `;
 
 const Contato = () => {

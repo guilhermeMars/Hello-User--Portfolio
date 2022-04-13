@@ -20,6 +20,9 @@ const IconDIv = styled.div`
     margin: 0px 20px;
     min-width: 40vh;
     max-width: 55vh;
+    @media only screen and (max-width: 1000px){
+        margin: 2vh auto;
+    }
 `;
 
 const Icon = styled.img`

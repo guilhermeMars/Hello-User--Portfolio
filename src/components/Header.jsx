@@ -144,7 +144,7 @@ const Header = () => {
           <StyledContentBar to="/servicos" onClick={handleCloseMenu}>Serviços</StyledContentBar>
           <StyledContentBar to="/localizacao" onClick={handleCloseMenu}>Localização</StyledContentBar>
           <CenterDiv>
-            <StyledBarLink to="/contato">Contate-nos</StyledBarLink>
+            <StyledBarLink to="/contato" onClick={handleCloseMenu}>Contate-nos</StyledBarLink>
           </CenterDiv>
         </StyledNavBar>
       )}
