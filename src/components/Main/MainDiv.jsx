@@ -44,7 +44,7 @@ const MainDiv = () => {
     <StyledDiv>
       <TextDiv>
           <StyledH1>Uma maneira fácil de mexer na web.</StyledH1>
-          <StyledP>Ajudamos pessoas de todas as idades, com dificuldade em tecnologia, à mais de 56 anos!</StyledP>
+          <StyledP>Ajudamos pessoas de todas as idades, com dificuldade em tecnologia, hà mais de 56 anos!</StyledP>
       </TextDiv>
       <NotebookImg src={NotebookGirl} alt="Garota Note" />
     </StyledDiv>

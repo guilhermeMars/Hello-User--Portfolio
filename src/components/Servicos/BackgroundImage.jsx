@@ -58,12 +58,9 @@ const BackgroundImage = () => {
     <MainDiv>
       <BorderDiv />
       <TextDiv>
-        <StyledH2>Sample Text</StyledH2>
+        <StyledH2>Suporte online</StyledH2>
         <StyledP>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, numquam.
-          Modi quisquam sit iure inventore eveniet excepturi fugit. Tempora
-          recusandae at explicabo provident possimus id sunt libero dolores
-          facere ullam.
+          Ajudamos todos os tipos de pessoas com problemas na web, pela própria web. Sempre tentando melhorar e aptos a críticas.<br/>Contate nosso suporte especialista e esqueça dos problemas ;)
         </StyledP>
       </TextDiv>
     </MainDiv>

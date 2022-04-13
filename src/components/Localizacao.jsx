@@ -54,6 +54,7 @@ const StyledImg = styled.img`
   @media only screen and (max-width: 1000px) {
     flex-direction: column;
     margin-top: 20px;
+    margin-left: 0px;
   }
 `;
 
@@ -74,10 +75,7 @@ const Localizacao = () => {
         <TextDiv>
           <StyledH2>Também prestamos atendimento presencial</StyledH2>
           <StyledP>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
-            praesentium dolores reprehenderit laudantium molestiae a maiores
-            inventore sunt at ea, accusantium repudiandae facere! Rem,
-            asperiores optio sequi eaque rerum nobis?
+            Mesmo de nosso atendimento visar o online, caso o usuário se sinta mais a vontade conversando com alguém presencialmente, nós temos profissionais prontos para lidar com a situação. <br/>(Por se tratar de uma empresa fictícia, a localização no mapa não reflete a mesma, é apenas um exemplo)
           </StyledP>
         </TextDiv>
         <StyledImg src={HelpingWork} alt="Ajudando no trabalho" />

@@ -35,8 +35,8 @@ const ParentsDiv = ()=>{
         <StyledDiv>
             <StyledImage src={Parents} alt="Parentes" />
             <TextDiv>
-                <StyledH2>Sample Text</StyledH2>
-                <StyledP>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus deserunt animi et, delectus repellat nisi! Iusto temporibus officia ratione veniam. Doloremque, autem! Ducimus ratione facilis quae magnam? Explicabo, enim impedit.</StyledP>
+                <StyledH2>Para toda a família!</StyledH2>
+                <StyledP>Nossos serviços independem de qualquer fator do usuário, como a idade.<br/>Estamos sempre aptos a prestar o suporte necessário e com uma maior facilidade para o usuário e/ou seu responsável.</StyledP>
             </TextDiv>
         </StyledDiv>
     );

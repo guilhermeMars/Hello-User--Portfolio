@@ -52,21 +52,21 @@ const QualityDiv = ()=>{
         <MainDiv>
             <IconDIv>
                 <Icon src={Fast} alt="Entrega Rápida" />
-                <StyledH3>Sample Text</StyledH3>
+                <StyledH3>Velocidade no Atendimento</StyledH3>
                 <Trace/>
-                <StyledP>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non accusamus aut aperiam perspiciatis rem, odio vitae soluta aliquam amet deserunt numquam dolore vel quis, illo illum obcaecati doloremque fugiat iusto.</StyledP>
+                <StyledP>Nossos especialistas estão online das 7h às 19h. Nesse horario respondem seu email em <strong>menos de 1 hora</strong>.</StyledP>
             </IconDIv>
             <IconDIv>
-                <Icon src={Help} alt="Ajuda Integral" />
-                <StyledH3>Sample Text</StyledH3>
+                <Icon src={Help} alt="Ajuda Especializada" />
+                <StyledH3>Ajuda Especializada</StyledH3>
                 <Trace/>
-                <StyledP>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non accusamus aut aperiam perspiciatis rem, odio vitae soluta aliquam amet deserunt numquam dolore vel quis, illo illum obcaecati doloremque fugiat iusto.</StyledP>
+                <StyledP>Todos os nossos atendentes são especialistas no assunto e possuem entendimento sobre tudo que rondeia a web, desde o <strong>básico de funcionalidades até o avançado</strong> de como tudo ocorre de baixo dos panos.</StyledP>
             </IconDIv>
             <IconDIv>
                 <Icon src={Online} alt="Ajuda Online" />
-                <StyledH3>Sample Text</StyledH3>
+                <StyledH3>Atendimento Online</StyledH3>
                 <Trace/>
-                <StyledP>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non accusamus aut aperiam perspiciatis rem, odio vitae soluta aliquam amet deserunt numquam dolore vel quis, illo illum obcaecati doloremque fugiat iusto.</StyledP>
+                <StyledP>Nosso atendimento ocorre <strong>100% online</strong>, podendo ser requisitadas vídeo chamadas com o atendente, caso a explicação tenha ficado confusa ou não tenha resolvido o problema</StyledP>
             </IconDIv>
         </MainDiv>
     )
