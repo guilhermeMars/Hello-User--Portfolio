@@ -9,6 +9,8 @@ import Localizacao from './components/Localizacao';
 import Footer from './components/Footer';
 import PoliticaDePrivacidade from './components/PoliticaDePrivacidade';
 import TermosDeUso from './components/TermosDeUso';
+import OQueE from './components/OQueE';
+import GuilhermeMars from './components/guilhermeMars';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Route path='/localizacao' element={<Localizacao/>}/>
         <Route path='/politicadeprivacidade' element={<PoliticaDePrivacidade/>}/>
         <Route path='/termosdeuso' element={<TermosDeUso/>}/>
+        <Route path='/oque' element={<OQueE/>}/>
+        <Route path='/guilhermemars' element={<GuilhermeMars/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

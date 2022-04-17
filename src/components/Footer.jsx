@@ -91,10 +91,9 @@ const Footer = () =>{
     return(
         <MainDiv>
             <StyledUl>
-                <StyledH4>Serviços</StyledH4>
-                <StyledLink to='#'><StyledLi><Angle src={AngleRight}/>Lorem</StyledLi></StyledLink>
-                <StyledLink to='#'><StyledLi><Angle src={AngleRight}/>Lorem</StyledLi></StyledLink>
-                <StyledLink to='#'><StyledLi><Angle src={AngleRight}/>Lorem</StyledLi></StyledLink>
+                <StyledH4>Este Projeto</StyledH4>
+                <StyledLink to='/oque'><StyledLi><Angle src={AngleRight}/>O que é</StyledLi></StyledLink>
+                <StyledLink to='guilhermemars'><LittleLi><Angle src={AngleRight}/>guilhermeMars</LittleLi></StyledLink>
             </StyledUl>
             <StyledUl>
                 <StyledH4>Sobre</StyledH4>
