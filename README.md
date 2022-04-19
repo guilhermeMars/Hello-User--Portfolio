@@ -1,11 +1,7 @@
 # Projeto Original para Portifólio
 
-Projeto semi pronto de um site que ajuda idosos com problemas na web
+Projeto finalizado!
 
-Coisas a fazer:
-* ~~Ícone do site~~
-* ~~Textos em quase todas as div's~~
-* ~~Refazer o '/sobre'~~
-* ~~Tornar responsivo~~
-* Terminar páginas do footer
-* Fazer funcional botão do footer
+Objetivo: Fazer um site funcional em React para uma empresa que ajuda pessoas, idosas em sua maioria, com problemas na web.
+
+### Site: https://hello-user-portfolio.vercel.app
