@@ -16,6 +16,11 @@ const validation = (values) => {
     errors.valid = false;
   }
 
+  if(isNaN(values.tel)){
+    errors.tel = "Insira apenas números";
+    errors.valid = false;
+  }
+
   return errors;
 };
 

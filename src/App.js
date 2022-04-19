@@ -11,6 +11,7 @@ import PoliticaDePrivacidade from './components/PoliticaDePrivacidade';
 import TermosDeUso from './components/TermosDeUso';
 import OQueE from './components/OQueE';
 import GuilhermeMars from './components/guilhermeMars';
+import Documentacao from './components/Documentacao';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path='/termosdeuso' element={<TermosDeUso/>}/>
         <Route path='/oque' element={<OQueE/>}/>
         <Route path='/guilhermemars' element={<GuilhermeMars/>}/>
+        <Route path='/documentacao' element={<Documentacao/>}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

@@ -82,10 +82,10 @@ const BackgroundImg = styled.img`
 const Contato = () => {
   const formik = useFormik({
     initialValues: {
-      name: "Gu",
-      tel: "19",
-      email: "Testtest.com",
-      text: "",
+      name: "",
+      tel: "",
+      email: "",
+      text: "Teste as validações",
     },
   });
 
