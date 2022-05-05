@@ -126,6 +126,11 @@ const Header = () => {
 
   const handleCloseMenu = () =>{
     setMenu(false);
+    window.scrollTo(0, 0);
+  }
+
+  function SendToTop(){
+    window.scrollTo(0, 0);
   }
 
   return (
@@ -152,15 +157,15 @@ const Header = () => {
         <HeadMenu>
           <StyledMenu src={Menu} alt="Menu Responsivo" onClick={handleMenu} />
           <HeadLink to="/">
-            <StyledImg src={HelloUser} alt="Hello User Logo" />
+            <StyledImg src={HelloUser} alt="Hello User Logo" onClick={SendToTop}/>
           </HeadLink>
         </HeadMenu>
         <StyledList>
-          <StyledContent to="/sobre">Sobre nós</StyledContent>
-          <StyledContent to="/servicos">Serviços</StyledContent>
-          <StyledContent to="/localizacao">Localização</StyledContent>
+          <StyledContent to="/sobre" onClick={SendToTop}>Sobre nós</StyledContent>
+          <StyledContent to="/servicos" onClick={SendToTop}>Serviços</StyledContent>
+          <StyledContent to="/localizacao" onClick={SendToTop}>Localização</StyledContent>
         </StyledList>
-        <StyledLink to="/contato">Contate-nos</StyledLink>
+        <StyledLink to="/contato" onClick={SendToTop}>Contate-nos</StyledLink>
       </SyledHeader>
     </>
   );
